@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :vendors
   resources :templates
   resources :items
   root 'main#index'
