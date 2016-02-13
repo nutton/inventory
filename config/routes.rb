@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :templates
+  resources :items
   root 'main#index'
 
   get 'main/help'

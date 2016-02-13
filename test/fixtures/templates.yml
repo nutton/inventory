@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vendor_id: 1
+  model: MyString
+  partnumber: MyString
+  version: MyString
+
+two:
+  vendor_id: 1
+  model: MyString
+  partnumber: MyString
+  version: MyString

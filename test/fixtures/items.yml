@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  template_id: 1
+  state_id: 1
+  dept_id: 1
+  serial_number: MyString
+  comment_id: 1
+
+two:
+  template_id: 1
+  state_id: 1
+  dept_id: 1
+  serial_number: MyString
+  comment_id: 1

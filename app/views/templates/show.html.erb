@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vendor:</strong>
+  <%= @template.vendor_id %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @template.model %>
+</p>
+
+<p>
+  <strong>Partnumber:</strong>
+  <%= @template.partnumber %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @template.version %>
+</p>
+
+<%= link_to 'Edit', edit_template_path(@template) %> |
+<%= link_to 'Back', templates_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  param1_id: 1
+  param2_id: 1
+  field_name: MyString
+  field_desc: MyString
+  field_value: MyString
+
+two:
+  param1_id: 1
+  param2_id: 1
+  field_name: MyString
+  field_desc: MyString
+  field_value: MyString

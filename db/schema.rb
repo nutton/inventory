@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160207182033) do
+ActiveRecord::Schema.define(version: 20160213201221) do
+
+  create_table "items", force: :cascade do |t|
+    t.integer  "template_id"
+    t.integer  "state_id"
+    t.integer  "dept_id"
+    t.string   "serial_number"
+    t.integer  "comment_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "option_fields", force: :cascade do |t|
+    t.integer  "param1_id"
+    t.integer  "param2_id"
+    t.string   "field_name"
+    t.string   "field_desc"
+    t.string   "field_value"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "sessions", force: :cascade do |t|
     t.string   "session_id", null: false
@@ -22,6 +42,15 @@ ActiveRecord::Schema.define(version: 20160207182033) do
 
   add_index "sessions", ["session_id"], name: "index_sessions_on_session_id", unique: true
   add_index "sessions", ["updated_at"], name: "index_sessions_on_updated_at"
+
+  create_table "templates", force: :cascade do |t|
+    t.integer  "vendor_id"
+    t.string   "model"
+    t.string   "partnumber"
+    t.string   "version"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "fio"
